@@ -8,3 +8,22 @@ body {
   background-color: colors.$very-dark-violet;
   min-height: 100vh;
 }
+// buttons
+.btn {
+  margin: 1em auto;
+  padding: 1em 2em;
+}
+.btn-outline {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  color: colors.$very-light-gray;
+  background-color: transparent;
+  border: 1px solid colors.$very-light-gray;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    color: colors.$very-dark-violet;
+    background-color: colors.$very-light-gray;
+  }
+}
