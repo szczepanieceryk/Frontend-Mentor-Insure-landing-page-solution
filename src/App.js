@@ -1,9 +1,12 @@
+import Navigation from "./Layouts/Navigation";
 import "./styles/style.css";
 
 const App = () => {
   return (
     <div className="App">
-      <header className="App-header">Landing page</header>
+      <header className="App-header">
+        <Navigation />
+      </header>
     </div>
   );
 };

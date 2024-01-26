@@ -1,0 +1,55 @@
+@use "../styles/abstracts/variables/colors";
+
+.navigation-wrapper {
+  .nav-top {
+    background-color: colors.$very-light-gray;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: auto;
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
+    .brand-logo,
+    .close-icon,
+    .hamburger-icon {
+      height: 30px;
+    }
+    .close-icon:hover,
+    .hamburger-icon:hover {
+      cursor: pointer;
+    }
+    .close-icon {
+      display: none;
+    }
+    .close-icon,
+    .hamburger-icon {
+      @media screen and (min-width: 1200px) {
+        display: none;
+      }
+    }
+    .ul-element {
+      padding: 1em 0.5em;
+      text-align: center;
+      list-style: none;
+      background-color: colors.$very-dark-violet;
+      width: 100%;
+      @media screen and (min-width: 1200px) {
+        background-color: transparent;
+      }
+      .li-element {
+        .link-element {
+          display: block;
+          margin: 1em 0;
+          text-decoration: none;
+          text-transform: capitalize;
+          color: colors.$very-light-gray;
+          @media screen and (min-width: 1200px) {
+            color: colors.$very-dark-violet;
+          }
+        }
+      }
+    }
+  }
+}
