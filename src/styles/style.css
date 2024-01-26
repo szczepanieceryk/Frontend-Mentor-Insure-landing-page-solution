@@ -11,4 +11,24 @@ body {
 .App {
   background-color: hsl(270deg, 9%, 17%);
   min-height: 100vh;
+}
+
+.btn {
+  margin: 1em auto;
+  padding: 1em 2em;
+}
+
+.btn-outline {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 98%);
+  background-color: transparent;
+  border: 1px solid hsl(0deg, 0%, 98%);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-outline:hover {
+  color: hsl(270deg, 9%, 17%);
+  background-color: hsl(0deg, 0%, 98%);
 }/*# sourceMappingURL=style.css.map */

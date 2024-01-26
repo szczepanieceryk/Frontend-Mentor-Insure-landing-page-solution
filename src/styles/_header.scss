@@ -1,0 +1,28 @@
+@use "./abstracts/variables/colors";
+@use "./abstracts/variables/fonts";
+
+.header-wrapper {
+  .header-img {
+    width: 100%;
+    height: auto;
+  }
+  .header-banner {
+    padding: 2em 1.5em;
+    text-align: center;
+    background-image: url(../images/bg-pattern-intro-left-mobile.svg)
+      url(../images/bg-pattern-intro-right-mobile.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: center;
+
+    .header-title {
+      color: colors.$very-light-gray;
+      font-family: fonts.$heading-font;
+      letter-spacing: 0.1em;
+    }
+    .header-txt {
+      margin: 2em 0;
+      color: colors.$dark-grayish-violet;
+      line-height: 1.5em;
+    }
+  }
+}
