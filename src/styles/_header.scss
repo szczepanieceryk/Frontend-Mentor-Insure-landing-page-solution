@@ -2,13 +2,25 @@
 @use "./abstracts/variables/fonts";
 
 .header-wrapper {
+  // @media screen and (min-width: 1200px) {
+  //   #header-banner-id {
+  //     order: 1;
+  //   }
+  //   #header-img-id {
+  //     order: 2;
+  //   }
+  // }
   .header-img {
     width: 100%;
     height: auto;
+    order: 2;
   }
   .header-banner {
+    order: 1;
+
     padding: 2em 1.5em;
     text-align: center;
+    background-color: colors.$very-dark-violet;
     background-image: url(../images/bg-pattern-intro-left-mobile.svg)
       url(../images/bg-pattern-intro-right-mobile.svg);
     background-repeat: no-repeat, no-repeat;

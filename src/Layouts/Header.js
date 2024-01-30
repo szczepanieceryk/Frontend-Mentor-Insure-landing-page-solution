@@ -1,13 +1,35 @@
 import "../styles/_header.scss";
 import HeaderMobileImg from "../images/image-intro-mobile.jpg";
-// import HeaderDesktopImg from "../images/image-intro-mobile.jpg";
+import HeaderDesktopImg from "../images/image-intro-desktop.jpg";
+import { useEffect, useState } from "react";
 
 const Header = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    window.addEventListener("resize", handleWindowResize);
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, [windowWidth]);
+
+  const handleWindowResize = () => {
+    setWindowWidth(window.innerWidth);
+  };
+
+  const getImageSize = () => {
+    if (windowWidth < 576) {
+      return HeaderMobileImg;
+    } else {
+      return HeaderDesktopImg;
+    }
+  };
+
   return (
     <div className="header-wrapper">
       <img
         className="header-img"
-        src={HeaderMobileImg}
+        src={getImageSize()}
         alt="people holding hands"
       />
       <div className="header-banner">
