@@ -1,0 +1,14 @@
+@use "./abstracts/variables/colors";
+@use "./abstracts/variables/fonts";
+.main-wrapper {
+  font-family: "";
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .main-info-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

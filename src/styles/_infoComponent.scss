@@ -1,0 +1,24 @@
+@use "../styles//abstracts/variables/colors";
+
+.single-info-component {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 300px;
+  @media screen and (min-width: 968px) {
+    justify-content: flex-start;
+  }
+  .info-icon {
+    margin: 2.5em auto 1em;
+  }
+  .info-txt-wrapper {
+    text-align: center;
+    .info-title {
+      margin: 0 auto 1em;
+    }
+    .info-txt {
+      line-height: 1.5em;
+      color: colors.$dark-grayish-violet;
+    }
+  }
+}
