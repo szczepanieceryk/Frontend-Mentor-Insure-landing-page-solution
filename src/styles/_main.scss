@@ -1,11 +1,23 @@
 @use "./abstracts/variables/colors";
 @use "./abstracts/variables/fonts";
 .main-wrapper {
+  margin: 8em 0;
+  padding: 1em;
   font-family: "";
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
+  .horizontal-bar {
+    margin: 0 auto;
+    height: 1px;
+    width: 40%;
+    background-color: colors.$grayish-blue;
+  }
+  .main-title {
+    margin-top: 1em;
+    font-family: fonts.$heading-font;
+    font-size: 2em;
+  }
   .main-info-wrapper {
     display: flex;
     justify-content: center;

@@ -1,0 +1,18 @@
+@use "../styles/abstracts/variables/colors";
+
+.find-more-wrapper {
+  margin-top: 8em;
+  padding: 2.5em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  background-color: colors.$dark-violet;
+  .find-more-title {
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: colors.$very-light-gray;
+  }
+}
