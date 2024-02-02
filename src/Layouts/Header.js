@@ -26,22 +26,24 @@ const Header = () => {
   };
 
   return (
-    <div className="header-wrapper">
-      <img
-        className="header-img"
-        src={getImageSize()}
-        alt="people holding hands"
-      />
-      <div className="header-banner">
-        <h1 className="header-title">
-          Humanizing <br /> your insurance.
-        </h1>
-        <p className="header-txt">
-          Get your life insurance coverage easier and faster. We blend our
-          expertise and technology to help you find the plan that’s right for
-          you. Ensure you and your loved ones are protected.
-        </p>
-        <button className="btn btn-outline">View plans</button>
+    <div className="header">
+      <div className="header-wrapper">
+        <img
+          className="header-img"
+          src={getImageSize()}
+          alt="people holding hands"
+        />
+        <div className="header-banner">
+          <h1 className="header-title">
+            Humanizing <br /> your insurance.
+          </h1>
+          <p className="header-txt">
+            Get your life insurance coverage easier and faster. We blend our
+            expertise and technology to help you find the plan that’s right for
+            you. Ensure you and your loved ones are protected.
+          </p>
+          <button className="btn btn-outline">View plans</button>
+        </div>
       </div>
     </div>
   );

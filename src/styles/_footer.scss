@@ -1,0 +1,72 @@
+@use "../styles/abstracts/variables/colors";
+@use "../styles/abstracts/variables/brakepoints";
+.footer {
+  .footer-wrapper {
+    margin: auto;
+    padding: 4em 2em;
+    max-width: 1400px;
+    .socials {
+      margin: 0 auto;
+      max-width: 1400px;
+      text-align: center;
+      @media screen and (min-width: 1200px) {
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+      }
+      .brand-logo,
+      .social-icons-wrapper {
+        margin: 1.2em auto;
+      }
+      .brand-logo {
+        width: auto;
+      }
+      .social-icons-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        max-width: 200px;
+      }
+    }
+    .horizontal-bar {
+      width: 100%;
+    }
+    .footer-navigation-wrapper {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      @media screen and (min-width: brakepoints.$desktop) {
+        text-align: left;
+      }
+      .ul-element {
+        list-style: none;
+
+        @media screen and (min-width: brakepoints.$desktop) {
+          display: flex;
+          justify-content: space-evenly;
+          width: 100%;
+          max-width: 1400px;
+        }
+
+        .li-label {
+          margin: 2em 0;
+          display: block;
+          color: colors.$dark-grayish-violet;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+
+        .link-element {
+          margin: 0.5em 0;
+          display: block;
+          text-transform: uppercase;
+          text-decoration: none;
+          font-weight: bold;
+          color: colors.$dark-violet;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

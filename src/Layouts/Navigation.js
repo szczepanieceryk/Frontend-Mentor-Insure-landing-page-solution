@@ -1,9 +1,8 @@
-import brandLogo from "../images/logo.svg";
 import hamburgerIcon from "../images/icon-hamburger.svg";
 import closeIcon from "../images/icon-close.svg";
 
 import "../styles/_navigation.scss";
-const Navigation = () => {
+const Navigation = ({ brandLogo }) => {
   return (
     <div className="navigation-wrapper">
       <nav className="nav-top">

@@ -4,8 +4,12 @@
 body {
   font-family: fonts.$main-font;
 }
-.App {
+.app-wrapper {
   min-height: 100vh;
+  .container {
+    margin: auto;
+    max-width: 1400px;
+  }
 }
 // buttons
 .btn {
@@ -25,4 +29,11 @@ body {
     color: colors.$very-dark-violet;
     background-color: colors.$very-light-gray;
   }
+}
+
+.horizontal-bar {
+  margin: 0 auto;
+  height: 1px;
+  width: 40%;
+  background-color: colors.$grayish-blue;
 }

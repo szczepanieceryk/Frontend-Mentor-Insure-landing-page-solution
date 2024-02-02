@@ -8,8 +8,12 @@ body {
   font-family: "Karla", Arial sans-serif;
 }
 
-.App {
+.app-wrapper {
   min-height: 100vh;
+}
+.app-wrapper .container {
+  margin: auto;
+  max-width: 1400px;
 }
 
 .btn {
@@ -30,4 +34,11 @@ body {
 .btn-outline:hover {
   color: hsl(270deg, 9%, 17%);
   background-color: hsl(0deg, 0%, 98%);
+}
+
+.horizontal-bar {
+  margin: 0 auto;
+  height: 1px;
+  width: 40%;
+  background-color: hsl(216deg, 30%, 68%);
 }/*# sourceMappingURL=style.css.map */
